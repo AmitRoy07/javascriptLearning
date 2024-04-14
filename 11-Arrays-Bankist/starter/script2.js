@@ -82,6 +82,25 @@ const displayMovements = function (movements) {
 };
 displayMovements(account1.movements);
 
+const user = 'Amit Roy';
+
+const createUserName = function (acc) {
+  // console.log(acc[0].owner, i);
+
+  acc.forEach(user => {
+    user.userName = user.owner
+      .toLowerCase()
+      .split(' ')
+      .map(name => name[0])
+      .join('');
+  });
+
+  // return userName;
+};
+
+createUserName(accounts);
+console.log(accounts);
+
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
