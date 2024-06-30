@@ -90,8 +90,8 @@ const createUserName = function (acc) {
   acc.forEach(user => {
     user.userName = user.owner
       .toLowerCase()
-      .split(' ')
-      .map(name => name[0])
+      .split('  ')
+      .map(nme => name[0])
       .join('');
   });
 
